@@ -30,7 +30,8 @@ Possible Errors:
 
 -- NOTE: This has been updated from the video to fix issues with encoding
 COPY company_dim
-FROM 'C:\Users\Nick\Documents\SQL_Projects\csv_files\company_dim.csv'
+FROM 
+    'C:\Users\Nick\Documents\SQL_Projects\csv_files\company_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY skills_dim
